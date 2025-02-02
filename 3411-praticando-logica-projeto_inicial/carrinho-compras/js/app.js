@@ -5,10 +5,11 @@ function adicionar() {
     let quantidade = Number(document.getElementById('quantidade').value);
     let total = document.getElementById('valor-total');
 
+    console.log(produtos)
+
     if (quantidade > 0){
         for(let i = 0; i < produtos.length; i++){
             if(produtos[i].selected){
-
                 valortotal = 0; 
 
                 if (total.innerHTML != 0){
